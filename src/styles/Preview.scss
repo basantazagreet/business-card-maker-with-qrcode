@@ -1,0 +1,32 @@
+.Preview{
+    width: 50%;
+    border: 2px solid #333;
+    padding: 15px;
+
+    @media screen and (max-width : 900px) {
+        width: 100%;
+    }
+
+    @import './BusinessCard.scss';
+    text-align: center;
+
+    &-Wrapper{
+        display: inline-block;
+        margin-bottom: 15px;
+    }
+
+    &-Actions{
+        button{
+            margin: 5px;
+            border: 2px solid #ccf;
+            background-color: #eef;
+            padding: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+
+            &:hover{
+                background-color: #ccf;
+            }
+        }
+    }
+}

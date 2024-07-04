@@ -1,0 +1,30 @@
+.App{
+    @import "./header.scss";
+
+    pre{
+        border: 1px solid #ccc;
+        background-color: #f5f5f5;
+        border-radius: 3px;
+        line-height: 1;
+    }
+
+    main{
+        display: flex;
+        @import "./Form.scss";
+        @import "./Preview.scss";
+
+        @media screen and (max-width : 900px) {
+            flex-direction: column;
+            margin: 0 auto;
+        }
+
+    }
+
+    h2{
+        border-bottom: 2px solid #ccf;
+        font-size: 1.5em;
+        margin-bottom: 15px;
+        
+    }
+}
+
