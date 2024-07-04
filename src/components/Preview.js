@@ -12,8 +12,7 @@ const Preview = ({Values}) => {
       exportComponentAsJPEG, exportComponentAsPDF, exportComponentAsPNG
     };
 
-    downloadAs["exportComponentAs" + e.target.innerHTML.trim().
-      replace("Save as ", "")](bcRef, Values.Name);
+    downloadAs["exportComponentAs" + e.target.innerHTML.trim().replace("Save as ", "")](bcRef, Values.Name);
 
     // exportComponentAsPDF(bcRef, Values.name);
   }
